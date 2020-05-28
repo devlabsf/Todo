@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Users</title>
+    <link href="static/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Registered Users</h1>
+    {% for user in userlist %}
+    <a href="/todo?user={{ user }}">{{ user }}</a><br>
+    {% endfor %}
+  </body>
+</html>

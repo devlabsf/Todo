@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ user }}'s Todo List</title>
+    <link href="static/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Say Hi {{ user }}</h1>
+    <ul type=none>
+      {% for item in tdlist%}
+      {% set itm, checked = item.split("|") %}
+      <li><input type="checkbox" {{ checked }}>{{ itm }}<form action="/delete?user={{ user }}"><input type="submit" value="X" class="delete"><li>
+      {% endfor %}
+    </ul>
+    <form action="/save" method="POST">
+      <input value="save" type="submit">
+    </form>
+    <a href="/">Home. Bring me home! pLease let me leave!</a>
+  </body>
+</html>
+
+<!--
+  Todo for todo:
+  for today:
+  Update Checked or not
+-->

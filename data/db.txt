@@ -1,0 +1,2 @@
+Adrian:hi:wash car|checked,drink water|none,say hi to niegbor|checked
+Bob:bobby:wash car|checked,drink water|none,get money|checked
